@@ -79,6 +79,7 @@ h2 {
   #navcontainer .logotextheader {
     color: white;
     font-size: 1rem;
+    font-weight: bold;
     align-self: center;
   }
 
@@ -121,38 +122,71 @@ h2 {
   }
 }
 
-/* Feature Leader Banner Styles */
-
-.leader {
-  min-height: 30rem;
-  background-image: url("../../resources/img/glasses-bg.png");
-  background-size: cover;
-  background-position: center;
-  flex-direction: column;
-}
+/* Feature Leader Banner Styles >> General */
 
 .leader .fixed-panel {
   width: 100%;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
-.leader-text {
-  background-color: white;
-  padding: 3rem 5rem;
-  opacity: 0.95;
+/* Leader Styles Desktop >> For screens with a resolution above 960px */
+
+@media only screen and (min-width: 960px) {
+  .leader {
+    height: 30rem;
+    background-image: url("../../resources/img/glasses-bg.png");
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+  }
+
+  .leader-text {
+    background-color: white;
+    padding: 3rem 5rem;
+    opacity: 0.95;
+    margin-top: 15rem;
+    margin-right: 0px;
+  }
 }
 
-#featuretext {
-  margin-top: 15rem;
-  margin-right: 0px;
+/* Leader Styles Tablet >> For screens with a resolution above 768px */
+
+@media only screen and (min-width: 481px) and (max-width: 959px) {
+  .leader {
+    height: 22rem;
+    background-image: url("../../resources/img/glasses-bg.png");
+    background-size: cover;
+    background-position: 15% 100%;
+    flex-direction: column;
+  }
+
+  .leader-text {
+    background-color: white;
+    margin: 13rem 1rem 0rem 1rem;
+    padding: 1.5rem 3rem;
+    opacity: 0.95;
+  }
 }
 
-@media only screen and (min-width: 961px) {
+/* Leader Styles Mobile >> For screens with a resolution of 480px or smaller */
 
-}
+@media only screen and (max-width: 480px) {
+  .leader {
+    height: 20rem;
+    background-image: url("../../resources/img/glasses-bg.png");
+    background-size: 300%;
+    background-position: 15% 100%;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
-@media only screen and (max-width: 960px) {
-
+  .leader-text {
+    background-color: white;
+    margin: 12rem 1rem 0rem 1rem;
+    padding: 1rem;
+    opacity: 0.95;
+  }
 }
 
 /* Unique Sell Points Styles */
@@ -228,15 +262,18 @@ footer .flex-container {
   width: 100%;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .logofooter {
   max-height: 1.5rem;
+  opacity: 0.6;
 }
 
 .logotextfooter {
   align-items: center;
   margin-left: 1rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }

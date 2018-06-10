@@ -35,9 +35,14 @@ h1 {
   font-size: 2rem;
   line-height: 2.4rem;
   text-transform: uppercase;
+  color: #333333;
 }
 
 h2 {
+  font-weight: bold;
+}
+
+strong {
   font-weight: bold;
 }
 
@@ -249,14 +254,19 @@ h2 {
   }
 
   .usp-img-container {
-    min-height: 6.5rem;
+    min-height: 9.5rem;
+    min-width: 9.5rem;
+    border-radius: 9.5rem;
+    background-color: azure;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .usp-img {
     max-width: 5rem;
     max-height: 5rem;
-    justify-content: center;
-    align-items: center;
+    margin-left: 2.3rem;
   }
 }
 

@@ -93,7 +93,8 @@ h2 {
 
 @media only screen and (min-width: 481px) and (max-width: 959px) {
   header {
-    position: relative;
+    position: fixed;
+    z-index: 1;
     width: 100%;
   }
 
@@ -125,7 +126,8 @@ h2 {
 
 @media only screen and (max-width: 480px) {
   header {
-    position: relative;
+    position: fixed;
+    z-index: 1;
     width: 100%;
   }
 
@@ -225,51 +227,105 @@ h2 {
 
 /* Unique Sell Points Styles */
 
-.usp-list .flex-container {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.usp-list .fixed-panel {
-  width: 100%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.usp {
-  flex-direction: column;
-  align-items: center;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.usp-img-container {
-  min-height: 6.5rem;
-}
-
-.usp-img {
-  max-width: 5rem;
-  max-height: 5rem;
-  justify-content: center;
-  align-items: center;
-}
-
 /* USPs Styles Desktop >> For screens with a resolution above 960px */
 
 @media only screen and (min-width: 960px) {
+  .usp-list .flex-container {
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  .usp-list .fixed-panel {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .usp {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .usp-img-container {
+    min-height: 6.5rem;
+  }
+
+  .usp-img {
+    max-width: 5rem;
+    max-height: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* USPs Styles Tablet >> For screens with a resolution above 768px */
 
 @media only screen and (min-width: 481px) and (max-width: 959px) {
+  .usp-list .flex-container {
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  .usp-list .fixed-panel {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .usp {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .usp-img-container {
+    min-height: 3rem;
+  }
+
+  .usp-img {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* USPs Styles Mobile >> For screens with a resolution of 480px or smaller */
 
 @media only screen and (max-width: 480px) {
+  .usp-list .flex-container {
+    justify-content: flex-start;
+    align-items: center;
+  }
 
+  .usp-list .fixed-panel {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  .usp {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .usp-img-container {
+    min-width: 4rem;
+    min-height: 5rem;
+    margin-right: 2rem;
+  }
+
+  .usp-img {
+    max-width: 4rem;
+    max-height: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 
@@ -315,7 +371,7 @@ h2 {
   .about-list {
     padding: 1rem 0rem 2rem 0rem;
   }
-  
+
   .about-item {
     display: inline-flex;
     flex-direction: column;

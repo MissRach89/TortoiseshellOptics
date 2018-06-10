@@ -3,3 +3,122 @@
 html {
   font-size: 18px;
 }
+
+body {
+  line-height: 1.4rem;
+  font-family: "Helvetica", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fixed-panel {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Typography Styles */
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+
+}
+
+
+/* Header Styles */
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  margin-top: 1rem;
+}
+
+#navcontainer {
+  background-color: cadetblue;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.logoheader {
+  max-height: 1.5rem;
+  padding: 0.5rem 1rem 0.5rem 2rem;
+}
+
+#navcontainer .logotextheader {
+  color: white;
+  font-size: 1rem;
+  align-self: center;
+}
+
+#navlinks a {
+  color: white;
+  display: inline-flex;
+  padding-right: 2rem;
+  text-decoration: none;
+  color: white;
+}
+
+/* Feature Leader Banner Styles */
+
+.leader {
+  min-height: 30rem;
+  background-image: url("../../resources/img/glasses-bg.png");
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.leader-text {
+  background-color: white;
+  padding: 3rem 5rem;
+  opacity: 0.9;
+}
+
+/* Unique Sell Points Styles */
+
+
+/* About Styles */
+
+
+/* Footer Styles */
+
+footer {
+  width: 100%;
+}
+
+footer .flex-container {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: azure;
+  padding: 4rem;
+}
+
+.logofooter {
+  max-height: 1.5rem;
+}
+
+.logotextfooter {
+  align-items: center;
+  margin-left: 1rem;
+}

@@ -25,6 +25,7 @@ body {
 h1 {
   font-weight: bold;
   font-size: 2rem;
+  line-height: 2.4rem;
   text-transform: uppercase;
 }
 
@@ -36,7 +37,7 @@ h2 {
 /* Header Styles */
 
 header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 99;
   margin-top: 1rem;
@@ -79,14 +80,55 @@ header {
   flex-direction: column;
 }
 
+.leader .fixed-panel {
+  width: 100%;
+  justify-content: flex-end;
+}
+
 .leader-text {
-  margin-top: 15rem;
   background-color: white;
   padding: 3rem 5rem;
   opacity: 0.95;
 }
 
+#featuretext {
+  margin-top: 15rem;
+  margin-right: 0px;
+}
+
 /* Unique Sell Points Styles */
+
+.usp-list .flex-container {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.usp-list .fixed-panel {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.usp {
+  flex-direction: column;
+  align-items: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.usp-img-container {
+  min-width: 6rem;
+  min-width: 6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.usp-img {
+  max-width: 5rem;
+  max-height: 5rem;
+  justify-content: center;
+  align-items: center;
+}
 
 
 /* About Styles */

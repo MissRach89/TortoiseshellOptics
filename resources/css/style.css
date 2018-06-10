@@ -44,20 +44,6 @@ h2 {
 
 /* Header Styles >> General */
 
-#navcontainer {
-  background-color: cadetblue;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.logoheader {
-  max-height: 1.5rem;
-  padding: 0.5rem 1rem 0.5rem 2rem;
-}
-
 #navlinks a {
   color: white;
   display: inline-flex;
@@ -68,12 +54,27 @@ h2 {
 
 /* Header Styles Desktop >> For screens with a resolution above 960px */
 
+#navcontainer {
+  background-color: cadetblue;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.25rem;
+}
+
 @media only screen and (min-width: 960px) {
   header {
     position: absolute;
     width: 100%;
     z-index: 99;
     margin-top: 1rem;
+  }
+
+  .logoheader {
+    max-height: 1.5rem;
+    padding: 0.5rem 1rem 0.5rem 2rem;
   }
 
   #navcontainer .logotextheader {
@@ -96,6 +97,21 @@ h2 {
     width: 100%;
   }
 
+  .logoheader {
+    max-height: 1.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  #navcontainer {
+    background-color: cadetblue;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0rem;
+  }
+
   #navcontainer .logotextheader {
     display: none;
   }
@@ -111,6 +127,21 @@ h2 {
   header {
     position: relative;
     width: 100%;
+  }
+
+  .logoheader {
+    max-height: 1.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  #navcontainer {
+    background-color: cadetblue;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0rem;
   }
 
   #navcontainer .logotextheader {
@@ -147,6 +178,7 @@ h2 {
     opacity: 0.95;
     margin-top: 15rem;
     margin-right: 0px;
+    border-radius: 0.25rem;
   }
 }
 
@@ -166,6 +198,7 @@ h2 {
     margin: 13rem 1rem 0rem 1rem;
     padding: 1.5rem 3rem;
     opacity: 0.95;
+    border-radius: 0.25rem;
   }
 }
 
@@ -186,6 +219,7 @@ h2 {
     margin: 12rem 1rem 0rem 1rem;
     padding: 1rem;
     opacity: 0.95;
+    border-radius: 0.25rem;
   }
 }
 
@@ -220,6 +254,24 @@ h2 {
   align-items: center;
 }
 
+/* USPs Styles Desktop >> For screens with a resolution above 960px */
+
+@media only screen and (min-width: 960px) {
+
+}
+
+/* USPs Styles Tablet >> For screens with a resolution above 768px */
+
+@media only screen and (min-width: 481px) and (max-width: 959px) {
+
+}
+
+/* USPs Styles Mobile >> For screens with a resolution of 480px or smaller */
+
+@media only screen and (max-width: 480px) {
+
+}
+
 
 /* About Styles */
 
@@ -243,12 +295,32 @@ h2 {
   color: white;
   padding: 0.5rem 1.25rem;
   margin-bottom: 0rem;
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
 }
 
 .about-item p {
   padding: 1.25rem;
   border: 1px cadetblue solid;
+  border-radius: 0rem 0rem 0.25rem 0.25rem;
   min-height: 7rem;
+}
+
+/* About Styles Desktop >> For screens with a resolution above 960px */
+
+@media only screen and (min-width: 960px) {
+
+}
+
+/* About Styles Tablet >> For screens with a resolution above 768px */
+
+@media only screen and (min-width: 481px) and (max-width: 959px) {
+
+}
+
+/* About Styles Mobile >> For screens with a resolution of 480px or smaller */
+
+@media only screen and (max-width: 480px) {
+
 }
 
 /* Footer Styles */
@@ -266,14 +338,51 @@ footer .flex-container {
   padding-bottom: 2.5rem;
 }
 
-.logofooter {
-  max-height: 1.5rem;
-  opacity: 0.6;
+/* Footer Styles Desktop >> For screens with a resolution above 960px */
+
+@media only screen and (min-width: 960px) {
+  .logotextfooter {
+    align-items: center;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+
+  .logofooter {
+    max-height: 1.5rem;
+    opacity: 0.6;
+    margin-left: 0rem;
+  }
 }
 
-.logotextfooter {
-  align-items: center;
-  margin-left: 1rem;
-  font-size: 0.8rem;
-  opacity: 0.8;
+/* Footer Styles Tablet >> For screens with a resolution above 768px */
+
+@media only screen and (min-width: 481px) and (max-width: 959px) {
+  .logotextfooter {
+    align-items: center;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+
+  .logofooter {
+    max-height: 1.5rem;
+    opacity: 0.6;
+    margin-left: 1rem;
+  }
+}
+
+/* Footer Styles Mobile >> For screens with a resolution of 480px or smaller */
+
+@media only screen and (max-width: 480px) {
+  .logotextfooter {
+    display: none;
+  }
+
+  .logofooter {
+    max-height: 1.5rem;
+    opacity: 0.6;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

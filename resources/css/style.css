@@ -14,10 +14,18 @@ body {
   flex-wrap: wrap;
 }
 
-.fixed-panel {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+@media only screen and (min-width: 961px) {
+  .fixed-panel {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .fixed-panel {
+    margin: 0;
+  }
 }
 
 /* Typography Styles */
@@ -34,14 +42,7 @@ h2 {
 }
 
 
-/* Header Styles */
-
-header {
-  position: absolute;
-  width: 100%;
-  z-index: 99;
-  margin-top: 1rem;
-}
+/* Header Styles >> General */
 
 #navcontainer {
   background-color: cadetblue;
@@ -57,18 +58,67 @@ header {
   padding: 0.5rem 1rem 0.5rem 2rem;
 }
 
-#navcontainer .logotextheader {
-  color: white;
-  font-size: 1rem;
-  align-self: center;
-}
-
 #navlinks a {
   color: white;
   display: inline-flex;
   padding-right: 2rem;
   text-decoration: none;
   color: white;
+}
+
+/* Header Styles Desktop >> For screens with a resolution above 960px */
+
+@media only screen and (min-width: 960px) {
+  header {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    margin-top: 1rem;
+  }
+
+  #navcontainer .logotextheader {
+    color: white;
+    font-size: 1rem;
+    align-self: center;
+  }
+
+  #navlinks-simple a {
+    display: none;
+  }
+}
+
+/* Header Styles Tablet >> For screens with a resolution above 768px */
+
+@media only screen and (min-width: 481px) and (max-width: 959px) {
+  header {
+    position: relative;
+    width: 100%;
+  }
+
+  #navcontainer .logotextheader {
+    display: none;
+  }
+
+  #navlinks-simple a {
+    display: none;
+  }
+}
+
+/* Header Styles Mobile >> For screens with a resolution of 480px or smaller */
+
+@media only screen and (max-width: 480px) {
+  header {
+    position: relative;
+    width: 100%;
+  }
+
+  #navcontainer .logotextheader {
+    display: none;
+  }
+
+  #navlinks-main a {
+    display: none;
+  }
 }
 
 /* Feature Leader Banner Styles */
@@ -95,6 +145,14 @@ header {
 #featuretext {
   margin-top: 15rem;
   margin-right: 0px;
+}
+
+@media only screen and (min-width: 961px) {
+
+}
+
+@media only screen and (max-width: 960px) {
+
 }
 
 /* Unique Sell Points Styles */
@@ -132,36 +190,46 @@ header {
 /* About Styles */
 
 .about-list {
+  padding: 1rem 0rem 5rem 0rem;
+}
+
+.about-item-group {
   justify-content: space-between;
-  padding: 3rem 0rem 5rem 0rem;
 }
 
 .about-item {
   display: inline-flex;
   flex-direction: column;
-  width: 45%;
+  width: 48%;
 }
 
 .about-item h2 {
   background-color: cadetblue;
   text-transform: uppercase;
   color: white;
-  padding: 0.25rem 1.5rem;
-  margin-bottom: 1rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 0rem;
+}
+
+.about-item p {
+  padding: 1.25rem;
+  border: 1px cadetblue solid;
+  min-height: 7rem;
 }
 
 /* Footer Styles */
 
 footer {
   width: 100%;
+  background-color: azure;
 }
 
 footer .flex-container {
   width: 100%;
   justify-content: flex-start;
   align-items: center;
-  background-color: azure;
-  padding: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .logofooter {

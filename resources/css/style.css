@@ -275,18 +275,8 @@ h2 {
 
 /* About Styles */
 
-.about-list {
-  padding: 1rem 0rem 5rem 0rem;
-}
-
 .about-item-group {
   justify-content: space-between;
-}
-
-.about-item {
-  display: inline-flex;
-  flex-direction: column;
-  width: 48%;
 }
 
 .about-item h2 {
@@ -298,29 +288,46 @@ h2 {
   border-radius: 0.25rem 0.25rem 0rem 0rem;
 }
 
-.about-item p {
-  padding: 1.25rem;
-  border: 1px cadetblue solid;
-  border-radius: 0rem 0rem 0.25rem 0.25rem;
-  min-height: 7rem;
-}
-
 /* About Styles Desktop >> For screens with a resolution above 960px */
 
 @media only screen and (min-width: 960px) {
+  .about-list {
+    padding: 1rem 0rem 5rem 0rem;
+  }
 
+  .about-item {
+    display: inline-flex;
+    flex-direction: column;
+    width: 48%;
+  }
+
+  .about-item p {
+    padding: 1.25rem;
+    border: 1px cadetblue solid;
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
+    min-height: 7rem;
+  }
 }
 
-/* About Styles Tablet >> For screens with a resolution above 768px */
+/* About Styles Tablet & Mobile >> For screens with a resolution below 960px */
 
-@media only screen and (min-width: 481px) and (max-width: 959px) {
+@media only screen and (max-width: 959px) {
+  .about-list {
+    padding: 1rem 0rem 2rem 0rem;
+  }
+  
+  .about-item {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0rem 1rem 1rem 1rem;
+  }
 
-}
-
-/* About Styles Mobile >> For screens with a resolution of 480px or smaller */
-
-@media only screen and (max-width: 480px) {
-
+  .about-item p {
+    padding: 1.25rem;
+    border: 1px cadetblue solid;
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
+  }
 }
 
 /* Footer Styles */

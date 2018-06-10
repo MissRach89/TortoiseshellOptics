@@ -48,7 +48,8 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .logoheader {
@@ -100,7 +101,7 @@ header {
 
 .usp-list .flex-container {
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .usp-list .fixed-panel {
@@ -112,15 +113,12 @@ header {
 .usp {
   flex-direction: column;
   align-items: center;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .usp-img-container {
-  min-width: 6rem;
-  min-width: 6rem;
-  justify-content: center;
-  align-items: center;
+  min-height: 6.5rem;
 }
 
 .usp-img {

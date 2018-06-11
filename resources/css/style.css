@@ -22,7 +22,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 960px) and (-webkit-min-device-pixel-ratio: 2) {
   .fixed-panel {
     margin: 0;
   }
@@ -96,7 +96,7 @@ strong {
 
 /* Header Styles Tablet >> For screens with a resolution above 768px */
 
-@media only screen and (min-width: 481px) and (max-width: 959px) {
+@media only screen and (min-width: 481px) and (max-width: 959px) and (-webkit-min-device-pixel-ratio: 2)  {
   header {
     position: fixed;
     z-index: 1;
@@ -129,7 +129,7 @@ strong {
 
 /* Header Styles Mobile >> For screens with a resolution of 480px or smaller */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   header {
     position: fixed;
     z-index: 1;
@@ -191,7 +191,7 @@ strong {
 
 /* Leader Styles Tablet >> For screens with a resolution above 768px */
 
-@media only screen and (min-width: 481px) and (max-width: 959px) {
+@media only screen and (min-width: 481px) and (max-width: 959px) and (-webkit-min-device-pixel-ratio: 2) {
   .leader {
     height: 22rem;
     background-image: url("../../resources/img/glasses-bg.png");
@@ -211,7 +211,7 @@ strong {
 
 /* Leader Styles Mobile >> For screens with a resolution of 480px or smaller */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .leader {
     height: 20rem;
     background-image: url("../../resources/img/glasses-bg.png");
@@ -272,7 +272,7 @@ strong {
 
 /* USPs Styles Tablet >> For screens with a resolution above 768px */
 
-@media only screen and (min-width: 481px) and (max-width: 959px) {
+@media only screen and (min-width: 481px) and (max-width: 959px) and (-webkit-min-device-pixel-ratio: 2) {
   .usp-list .flex-container {
     justify-content: space-between;
     align-items: center;
@@ -305,7 +305,7 @@ strong {
 
 /* USPs Styles Mobile >> For screens with a resolution of 480px or smaller */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .usp-list .flex-container {
     justify-content: flex-start;
     align-items: center;
@@ -377,7 +377,7 @@ strong {
 
 /* About Styles Tablet & Mobile >> For screens with a resolution below 960px */
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 959px) and (-webkit-min-device-pixel-ratio: 2) {
   .about-list {
     padding: 1rem 0rem 2rem 0rem;
   }
@@ -430,7 +430,7 @@ footer .flex-container {
 
 /* Footer Styles Tablet >> For screens with a resolution above 768px */
 
-@media only screen and (min-width: 481px) and (max-width: 959px) {
+@media only screen and (min-width: 481px) and (max-width: 959px) and (-webkit-min-device-pixel-ratio: 2) {
   .logotextfooter {
     align-items: center;
     margin-left: 1rem;
@@ -447,7 +447,7 @@ footer .flex-container {
 
 /* Footer Styles Mobile >> For screens with a resolution of 480px or smaller */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .logotextfooter {
     display: none;
   }
